@@ -1,0 +1,139 @@
+
+.landing {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+
+  background-color: #151515;
+  background-image: url("/assets/banners/campus-landing.jpg");
+  background-position: center;
+  background-size: cover;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.landing-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.58);
+  z-index: 0;
+}
+
+.landing-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 24px;
+}
+
+.landing-logo {
+  position: relative;
+  transform: rotate(-7deg);
+}
+
+.landing-logo h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(4.5rem, 12vw, 9rem);
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: -0.055em;
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.landing-crown {
+  position: absolute;
+  top: -68px;
+  left: 4px;
+  font-size: 4.5rem;
+  transform: rotate(-10deg);
+}
+
+.landing-tagline {
+  margin: 35px 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+}
+
+.landing-enter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 16px 24px;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.25);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.landing-enter:hover {
+  background: #ffffff;
+  color: #111111;
+}
+
+.landing-enter:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.landing-bottom {
+  position: absolute;
+  z-index: 1;
+  bottom: 35px;
+  left: 5%;
+  right: 5%;
+
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+}
+
+.landing-signature {
+  font-family: cursive;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  transform: rotate(-8deg);
+}
+
+@media (max-width: 600px) {
+  .landing-logo h1 {
+    font-size: clamp(3.8rem, 16vw, 6rem);
+  }
+
+  .landing-crown {
+    top: -52px;
+    font-size: 3rem;
+  }
+
+  .landing-bottom {
+    flex-direction: column;
+    align-items: center;
+    bottom: 24px;
+  }
+
+  .landing-tagline {
+    font-size: 0.6rem;
+    letter-spacing: 0.13em;
+  }
+}

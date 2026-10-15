@@ -1,0 +1,26 @@
+
+:root {
+  /* Campus Culture — monochrome identity */
+  --color-primary: #111111;
+  --color-primary-dark: #000000;
+  --color-midnight: #111111;
+  --color-white: #ffffff;
+  --color-cream: #ffffff;
+  --color-gold: #ffffff;
+
+  /* Interface */
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-text: #111111;
+  --color-text-muted: #666666;
+  --color-border: #dddddd;
+  --color-subtle: #f3f3f3;
+
+  /* Typography — temporary until logo assets are ready */
+  --font-heading: "Oswald", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Layout */
+  --container-width: 1280px;
+  --border-radius: 4px;
+}
