@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
+import Catalog from "./pages/Catalog";
 import StoreLayout from "./components/layout/StoreLayout";
 import PagePlaceholder from "./components/ui/PagePlaceholder";
 
@@ -16,15 +17,7 @@ export default function App() {
       <Route element={<StoreLayout />}>
         <Route path="/home" element={<Home />} />
 
-        <Route
-          path="/shop"
-          element={
-            <PagePlaceholder
-              title="SHOP ALL"
-              description="Our product catalog is coming soon."
-            />
-          }
-        />
+        <Route path="/shop" element={<Catalog />} />
 
         <Route
           path="/products/:id"
