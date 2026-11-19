@@ -1,4 +1,6 @@
-
+import Cart from "./features/cart/Cart";
+import Checkout from "./features/cart/Checkout";
+import OrderConfirmation from "./features/cart/OrderConfirmation";
 import { Routes, Route } from "react-router-dom";
 
 import Landing from "./pages/Landing";
@@ -36,25 +38,10 @@ export default function App() {
           }
         />
 
-        <Route
-          path="/cart"
-          element={
-            <PagePlaceholder
-              title="YOUR CART"
-              description="Shopping cart functionality is coming soon."
-            />
-          }
-        />
+        <Route path="/cart" element={<Cart />} />
 
-        <Route
-          path="/checkout"
-          element={
-            <PagePlaceholder
-              title="CHECKOUT"
-              description="Simulated checkout is being developed."
-            />
-          }
-        />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/order-confirmation" element={<OrderConfirmation />} />
 
         <Route
           path="/account"
